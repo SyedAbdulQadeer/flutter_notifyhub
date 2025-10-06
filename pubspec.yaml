@@ -1,6 +1,6 @@
 name: flutter_notifyhub
 description: "Secure Flutter package to send Firebase Cloud Messaging (FCM) notifications directly from the client — no backend required."
-version: 1.0.0
+version: 1.0.2
 homepage: https://alwaridev.tech
 repository: https://github.com/SyedAbdulQadeer/flutter_notifyhub
 issue_tracker: https://github.com/SyedAbdulQadeer/flutter_notifyhub/issues
