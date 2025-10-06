@@ -475,9 +475,8 @@ SOFTWARE.
 
 ## 💡 Support
 
-- 📧 **Email**: support@alwaridev.tech
+- 📧 **Email**: abdulqadeer.solutions@gmail.com
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/SyedAbdulQadeer/flutter_notifyhub/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/SyedAbdulQadeer/flutter_notifyhub/discussions)
 
 ---
 
