@@ -7,6 +7,7 @@
 /// Developed by: Syed Abdul Qadeer
 /// Company: AlwariDev
 /// Website: https://alwaridev.tech
+library;
 
 import 'dart:convert';
 
@@ -58,7 +59,7 @@ class NotificationRequest {
   /// This method serializes the request object for transmission to the
   /// notification service API. The data payload is JSON-encoded if present.
   ///
-  /// Returns a Map<String, dynamic> suitable for HTTP request bodies.
+  /// Returns a Map&lt;String, dynamic&gt; suitable for HTTP request bodies.
   Map<String, dynamic> toJson() {
     final json = {
       'firebaseConfig': firebaseConfig,

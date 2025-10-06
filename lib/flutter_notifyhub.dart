@@ -19,6 +19,7 @@
 ///
 /// This package provides a simplified interface for sending Firebase notifications
 /// without exposing complex backend configurations to the end user.
+library;
 
 import 'src/notification_handler.dart';
 import 'src/models.dart';
@@ -147,7 +148,7 @@ class AlwariDevNotificationService {
   /// - [fcmToken]: Target device's FCM token (required)
   /// - [title]: Notification title (required, max 200 characters)
   /// - [body]: Notification body text (required, max 1000 characters)
-  /// - [data]: Optional custom data payload (Map<String, dynamic>)
+  /// - [data]: Optional custom data payload (Map&lt;String, dynamic&gt;)
   ///   Useful for deep linking, custom actions, or app state updates
   ///
   /// Returns:
@@ -230,7 +231,7 @@ class AlwariDevNotificationService {
   /// - [commonData]: Optional data payload applied to all notifications
   ///
   /// Returns:
-  /// - List<NotificationResponse>: Response for each notification in order
+  /// - List&lt;NotificationResponse&gt;: Response for each notification in order
   ///
   /// Example:
   /// ```dart

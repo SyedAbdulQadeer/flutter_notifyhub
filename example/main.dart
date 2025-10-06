@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notifyhub/flutter_notifyhub.dart';
 
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize Firebase first
@@ -52,17 +51,16 @@ class _NotificationDemoState extends State<NotificationDemo> {
     "project_id": "my-awesome-project",
     "private_key_id": "1a2b3c4d5e6f7g8h9i0j123456789abcd",
     "private_key":
-    "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhki...fakekeycontent...IDAQAB\n-----END PRIVATE KEY-----\n",
+        "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhki...fakekeycontent...IDAQAB\n-----END PRIVATE KEY-----\n",
     "client_email":
-    "my-service-account@my-awesome-project.iam.gserviceaccount.com",
+        "my-service-account@my-awesome-project.iam.gserviceaccount.com",
     "client_id": "123456789012345678901",
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
     "client_x509_cert_url":
-    "https://www.googleapis.com/robot/v1/metadata/x509/my-service-account%40my-awesome-project.iam.gserviceaccount.com",
+        "https://www.googleapis.com/robot/v1/metadata/x509/my-service-account%40my-awesome-project.iam.gserviceaccount.com",
   };
-
 
   @override
   void initState() {
@@ -82,7 +80,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
     _tokenController.text = token ?? "";
     _titleController.text = 'Hello from AlwariDev!';
     _bodyController.text =
-    'This is a test notification from the Flutter package.';
+        'This is a test notification from the Flutter package.';
   }
 
   Future<void> _checkServiceHealth() async {
@@ -135,7 +133,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
       setState(() {
         if (result.success) {
           _status =
-          'Notification sent successfully! ✅\nMessage ID: ${result.messageId}';
+              'Notification sent successfully! ✅\nMessage ID: ${result.messageId}';
         } else {
           _status = 'Failed to send notification ❌\nError: ${result.error}';
         }
@@ -213,9 +211,9 @@ class _NotificationDemoState extends State<NotificationDemo> {
                     const SizedBox(height: 8),
                     const Text(
                       '1. Replace the serviceAccount JSON with your Firebase service account\n'
-                          '2. The FCM token is automatically loaded from your device\n'
-                          '3. Backend URL and secret are pre-configured - no setup needed!\n'
-                          '4. Just customize the title and body, then send!',
+                      '2. The FCM token is automatically loaded from your device\n'
+                      '3. Backend URL and secret are pre-configured - no setup needed!\n'
+                      '4. Just customize the title and body, then send!',
                       style: TextStyle(fontSize: 12),
                     ),
                   ],
@@ -272,12 +270,12 @@ class _NotificationDemoState extends State<NotificationDemo> {
                         ),
                         child: _isLoading
                             ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                          ),
-                        )
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                ),
+                              )
                             : const Text('Send Notification'),
                       ),
                     ),
@@ -289,7 +287,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
 
             // Status Card
             Card(
-              color: Theme.of(context).colorScheme.surfaceVariant,
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
